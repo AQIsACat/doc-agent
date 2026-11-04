@@ -1,0 +1,23 @@
+# 依赖
+node_modules/
+.pnpm-store/
+
+# 编译产物
+dist/
+build/
+
+# 环境变量（防泄漏）
+.env
+.env.*
+!.env.example
+
+# 日志
+*.log
+pnpm-debug.log*
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 测试残留
+tmp/

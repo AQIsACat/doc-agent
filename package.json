@@ -1,0 +1,21 @@
+{
+  "name": "doc-agent",
+  "private": true,
+  "version": "0.0.0",
+  "packageManager": "pnpm@12.15.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "pnpm -r --parallel --stream run dev",
+    "dev:server": "pnpm --filter @doc-agent/server dev",
+    "dev:web": "pnpm --filter @doc-agent/web dev",
+    "build": "pnpm -r run build",
+    "typecheck": "pnpm -r run typecheck",
+    "start": "pnpm --filter @doc-agent/server start",
+
+    "db:migrate": "pnpm --filter @doc-agent/server db:migrate",
+    "db:migrate:dry": "pnpm --filter @doc-agent/server db:migrate:dry",
+    "db:migrate:status": "pnpm --filter @doc-agent/server db:migrate:status"
+  }
+}
